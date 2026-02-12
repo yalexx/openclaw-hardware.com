@@ -430,5 +430,49 @@ if((window.innerHeight+window.scrollY)>=document.body.offsetHeight-100)showPopup
 })();
 </script>
 
+
+<!-- Redirect Popup -->
+<div id="redirect-overlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;justify-content:center;align-items:center;backdrop-filter:blur(4px)">
+<div style="background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:32px;max-width:420px;width:90%;text-align:center;box-shadow:0 16px 48px rgba(0,0,0,0.5)">
+<img src="https://openclawhardware.dev/clawbox-1.webp" alt="ClawBox" style="width:120px;height:120px;object-fit:cover;border-radius:12px;margin-bottom:16px">
+<h3 style="color:#f3f4f6;margin:0 0 8px;font-size:1.3rem">Visit the Official Store?</h3>
+<p style="color:#9ca3af;margin:0 0 4px;font-size:.95rem">Get ClawBox &mdash; &euro;399 one-time, ships worldwide</p>
+<p id="redirect-timer" style="color:#6b7280;margin:0 0 20px;font-size:.85rem">Redirecting in <span id="countdown">10</span> seconds...</p>
+<div style="display:flex;gap:12px;justify-content:center">
+<a href="https://openclawhardware.dev/" id="redirect-confirm" style="padding:12px 28px;background:linear-gradient(135deg,#1f6feb,#58a6ff);color:#fff;text-decoration:none;border-radius:8px;font-weight:700;font-size:.95rem;transition:transform .2s">Go to Store &rarr;</a>
+<button id="redirect-cancel" style="padding:12px 28px;background:#21262d;color:#9ca3af;border:1px solid #30363d;border-radius:8px;font-size:.95rem;cursor:pointer;transition:background .2s" onmouseover="this.style.background='#30363d'" onmouseout="this.style.background='#21262d'">Stay Here</button>
+</div>
+</div>
+</div>
+<script>
+(function(){
+  var shown=false;
+  function showPopup(){
+    if(shown)return;
+    if(sessionStorage.getItem("rd_shown"))return;
+    shown=true;
+    sessionStorage.setItem("rd_shown","1");
+    var o=document.getElementById("redirect-overlay");
+    o.style.display="flex";
+    var c=10,t=document.getElementById("countdown");
+    var iv=setInterval(function(){
+      c--;t.textContent=c;
+      if(c<=0){clearInterval(iv);window.location.href="https://openclawhardware.dev/";}
+    },1000);
+    document.getElementById("redirect-cancel").onclick=function(){
+      clearInterval(iv);o.style.display="none";
+    };
+    document.getElementById("redirect-confirm").onclick=function(e){
+      e.preventDefault();clearInterval(iv);window.location.href="https://openclawhardware.dev/";
+    };
+  }
+  window.addEventListener("scroll",function(){
+    if((window.innerHeight+window.scrollY)>=(document.body.scrollHeight-100)){
+      showPopup();
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
