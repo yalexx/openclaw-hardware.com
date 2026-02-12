@@ -318,14 +318,14 @@ body{font-family:'Inter',sans-serif;background:#0a0f1a;color:#e0e0e0;min-height:
 </body>
 
 <!-- Redirect Popup -->
-<div id="redirectPopup" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;align-items:center;justify-content:center">
-<div style="background:#121a2e;border:1px solid rgba(255,107,53,0.3);border-radius:16px;padding:40px;max-width:480px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.5)">
-<h2 style="color:#fff;font-size:1.5rem;margin:0 0 12px;font-weight:700">🚀 Want to see ClawBox in action?</h2>
+<div id="redirectPopup" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;align-items:center;justify-content:center;padding:20px;box-sizing:border-box">
+<div style="background:#121a2e;border:1px solid rgba(255,107,53,0.3);border-radius:16px;padding:28px 20px;max-width:420px;width:100%;box-sizing:border-box;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.5)">
+<h2 style="color:#fff;font-size:clamp(1.1rem,4vw,1.5rem);margin:0 0 12px;font-weight:700">🚀 Want to see ClawBox in action?</h2>
 <p style="color:#9ca3af;margin:0 0 8px;font-size:1rem">Visit the official ClawBox store for full specs, demos, and ordering.</p>
 <p id="countdownText" style="color:#ff6b35;margin:0 0 24px;font-size:0.9rem">Redirecting in <span id="countdown">10</span> seconds...</p>
-<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-<a href="https://openclawhardware.dev/" id="acceptBtn" style="display:inline-block;padding:14px 36px;background:linear-gradient(135deg,#ff6b35,#ff3864);color:#fff;text-decoration:none;border-radius:12px;font-size:1.05rem;font-weight:600;transition:transform .2s">Yes, take me there →</a>
-<button id="cancelBtn" onclick="closePopup()" style="padding:14px 36px;background:transparent;color:#9ca3af;border:1px solid #374151;border-radius:12px;font-size:1.05rem;cursor:pointer;transition:all .2s">No thanks, stay here</button>
+<div style="display:flex;gap:10px;justify-content:center;flex-direction:column;align-items:center">
+<a href="https://openclawhardware.dev/" id="acceptBtn" style="display:inline-block;padding:12px 24px;background:linear-gradient(135deg,#ff6b35,#ff3864);color:#fff;text-decoration:none;border-radius:12px;font-size:1.05rem;font-weight:600;transition:transform .2s">Yes, take me there →</a>
+<button id="cancelBtn" onclick="closePopup()" style="padding:12px 24px;background:transparent;color:#9ca3af;border:1px solid #374151;border-radius:12px;font-size:1.05rem;cursor:pointer;transition:all .2s">No thanks, stay here</button>
 </div>
 </div>
 </div>
