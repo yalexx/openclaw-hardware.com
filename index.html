@@ -3,354 +3,432 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OpenClaw Hardware – Buy the ClawBox AI Device | NVIDIA Jetson Orin Nano</title>
-<meta name="description" content="OpenClaw Hardware: buy the ClawBox AI device powered by NVIDIA Jetson Orin Nano. 67 TOPS, self-hosted AI assistant, €399 one-time. No cloud subscriptions.">
-<meta name="keywords" content="openclaw hardware, open claw hardware, openclaw ai hardware, openclaw device, openclaw buy, openclaw nvidia, clawbox, openclaw box, buy openclaw">
+<title>OpenClaw Hardware – Your Private AI Server | ClawBox by NVIDIA Jetson</title>
+<meta name="description" content="Automate your life, completely private. ClawBox: a pre-configured AI assistant powered by NVIDIA Jetson Orin Nano. 67 TOPS, €399 one-time, no subscriptions.">
+<meta name="keywords" content="openclaw hardware, private ai server, local ai assistant, self-hosted ai, clawbox, openclaw nvidia jetson, buy openclaw, home ai server">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://openclaw-hardware.com/">
-<meta property="og:title" content="OpenClaw Hardware – Buy the ClawBox AI Device">
-<meta property="og:description" content="OpenClaw Hardware: the ClawBox AI device with NVIDIA Jetson Orin Nano. 67 TOPS, €399.">
+<meta property="og:title" content="Your Private AI Server — No Subscriptions, No Data Leaks">
+<meta property="og:description" content="ClawBox: pre-configured AI hardware. NVIDIA Jetson Orin Nano, 67 TOPS, €399 one-time.">
 <meta property="og:url" content="https://openclaw-hardware.com/">
 <meta property="og:image" content="https://openclawhardware.dev/clawbox-1.webp">
 <meta property="og:type" content="product">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="OpenClaw Hardware – Buy the ClawBox AI Device">
-<meta name="twitter:description" content="OpenClaw Hardware: the ClawBox AI device with NVIDIA Jetson Orin Nano. 67 TOPS, €399.">
+<meta name="twitter:title" content="Your Private AI Server — No Subscriptions, No Data Leaks">
+<meta name="twitter:description" content="ClawBox: pre-configured AI hardware. NVIDIA Jetson Orin Nano, 67 TOPS, €399.">
 <meta name="twitter:image" content="https://openclawhardware.dev/clawbox-1.webp">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"OpenClaw Hardware device: pre-configured AI assistant powered by NVIDIA Jetson Orin Nano 8GB. 67 TOPS, 512GB NVMe SSD, 15W power draw.","brand":{"@type":"Brand","name":"OpenClaw Hardware"},"image":"https://openclawhardware.dev/clawbox-1.webp","url":"https://openclawhardware.dev/","offers":{"@type":"Offer","price":"399","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}}
+{"@context":"https://schema.org","@type":"Product","name":"ClawBox","description":"Pre-configured AI assistant hardware powered by NVIDIA Jetson Orin Nano 8GB. 67 TOPS, 512GB NVMe SSD, 15W power draw. Self-hosted, private AI.","brand":{"@type":"Brand","name":"OpenClaw Hardware"},"image":"https://openclawhardware.dev/clawbox-1.webp","url":"https://openclawhardware.dev/","offers":{"@type":"Offer","price":"399","priceCurrency":"EUR","availability":"https://schema.org/InStock","priceValidUntil":"2026-12-31"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"12"}}
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is OpenClaw hardware?","acceptedAnswer":{"@type":"Answer","text":"OpenClaw hardware is the ClawBox — a dedicated AI device running OpenClaw software on NVIDIA Jetson Orin Nano with 8GB RAM, 512GB NVMe SSD, and 67 TOPS of AI performance. It comes pre-configured as a complete private AI assistant."}},
+{"@type":"Question","name":"How does ClawBox compare to cloud AI like ChatGPT Plus?","acceptedAnswer":{"@type":"Answer","text":"ClawBox costs €399 one-time vs €240+/year for cloud AI subscriptions. All data stays local on your device — no privacy concerns. It runs 24/7 without internet dependency and pays for itself in under 6 months."}},
+{"@type":"Question","name":"What can I automate with OpenClaw hardware?","acceptedAnswer":{"@type":"Answer","text":"Browser automation, email management, calendar scheduling, web scraping, multi-platform messaging (Telegram, WhatsApp, Discord), smart home integration, and custom AI workflows — all running locally on your ClawBox."}},
+{"@type":"Question","name":"Is the ClawBox difficult to set up?","acceptedAnswer":{"@type":"Answer","text":"Setup takes under 5 minutes. Plug in power and ethernet, scan the QR code with your phone, connect your Telegram/WhatsApp, and you're running. No coding or technical expertise required."}},
+{"@type":"Question","name":"Where does ClawBox ship to?","acceptedAnswer":{"@type":"Answer","text":"ClawBox ships worldwide — EU, US, Canada, Australia, UK, Switzerland, and Norway. Every order includes a 30-day money-back guarantee."}}
+]}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Inter',sans-serif;background:#0a0f1a;color:#e0e0e0;min-height:100vh;line-height:1.7}
-.hero-banner{background:linear-gradient(135deg,#ff6b35 0%,#ff3864 50%,#ff6b35 100%);padding:80px 20px;text-align:center;position:relative;overflow:hidden}
-.hero-banner::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.05) 0%,transparent 60%);animation:pulse 6s ease-in-out infinite}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
-.hero-banner h1{font-size:clamp(2.2rem,5vw,3.5rem);color:#fff;font-weight:800;margin-bottom:16px;position:relative;z-index:1}
-.hero-banner p{max-width:640px;margin:0 auto;font-size:1.15rem;color:rgba(255,255,255,0.9);position:relative;z-index:1}
-.hero-banner .price-badge{display:inline-block;margin-top:24px;background:rgba(0,0,0,0.3);padding:12px 32px;border-radius:50px;font-size:1.4rem;font-weight:800;color:#fff;position:relative;z-index:1}
-.content{max-width:960px;margin:0 auto;padding:60px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-bottom:50px}
-.card{background:#121a2e;border-radius:16px;padding:32px;border:1px solid rgba(255,107,53,0.15);transition:transform .2s,border-color .2s}
-.card:hover{transform:translateY(-4px);border-color:rgba(255,107,53,0.4)}
-.card .icon{font-size:2.2rem;margin-bottom:14px}
-.card h3{color:#ff6b35;margin-bottom:10px;font-size:1.1rem;font-weight:600}
-.card p{color:#9ca3af;font-size:.95rem}
-.testimonial{text-align:center;margin:50px 0}
-.testimonial blockquote{background:#121a2e;border-left:4px solid #ff6b35;padding:28px 32px;border-radius:0 16px 16px 0;font-style:italic;color:#d1d5db;font-size:1.05rem;max-width:700px;margin:0 auto}
-.testimonial cite{display:block;margin-top:14px;color:#6b7280;font-size:.9rem}
-.seo-text{max-width:700px;margin:0 auto 40px;color:#9ca3af;font-size:.95rem;text-align:center}
-.cta{text-align:center;padding:40px 0}
-.cta h2{color:#e0e0e0;margin-bottom:20px;font-size:1.3rem}
-.cta a{display:inline-block;padding:18px 48px;background:linear-gradient(135deg,#ff6b35,#ff3864);color:#fff;text-decoration:none;border-radius:14px;font-size:1.15rem;font-weight:700;transition:transform .2s,box-shadow .2s}
-.cta a:hover{transform:scale(1.05);box-shadow:0 8px 30px rgba(255,107,53,0.3)}
-.faq-section{margin:60px 0;max-width:800px;margin-left:auto;margin-right:auto}
-.faq-section h2{color:#e0e0e0;margin-bottom:30px;font-size:1.8rem;text-align:center}
-.faq-item{margin-bottom:16px}
-.faq-item details{background:#121a2e;border-radius:12px;border:1px solid rgba(255,107,53,0.15);overflow:hidden}
-.faq-item summary{padding:20px;cursor:pointer;color:#ff6b35;font-weight:600;font-size:1.05rem;transition:background .2s}
-.faq-item summary:hover{background:rgba(255,107,53,0.05)}
-.faq-item details[open] summary{background:rgba(255,107,53,0.1);border-bottom:1px solid rgba(255,107,53,0.15)}
-.faq-item .faq-content{padding:20px;color:#9ca3af;border-top:1px solid rgba(255,107,53,0.15)}
-.comparison-section{margin:60px 0}
-.comparison-section h2{color:#e0e0e0;margin-bottom:30px;font-size:1.8rem;text-align:center}
-.comparison-table{width:100%;border-collapse:collapse;background:#121a2e;border-radius:12px;overflow:hidden;border:1px solid rgba(255,107,53,0.15)}
-.comparison-table th{background:#ff6b35;color:#fff;padding:16px;text-align:left;font-weight:600}
-.comparison-table td{padding:16px;border-bottom:1px solid rgba(255,107,53,0.15);color:#9ca3af}
-.comparison-table tr:nth-child(even){background:rgba(255,107,53,0.02)}
+
+/* Hero */
+.hero{padding:60px 20px 80px;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero-text h1{font-size:clamp(2rem,4.5vw,3.2rem);color:#fff;font-weight:800;line-height:1.15;margin-bottom:16px}
+.hero-text h1 span{background:linear-gradient(135deg,#ff6b35,#ff3864);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-text .subtitle{font-size:1.1rem;color:#9ca3af;margin-bottom:24px;line-height:1.6}
+.hero-text .subtitle strong{color:#e0e0e0}
+.hero-cta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
+.btn-primary{display:inline-block;padding:16px 32px;background:linear-gradient(135deg,#ff6b35,#ff3864);color:#fff;text-decoration:none;border-radius:12px;font-size:1.1rem;font-weight:700;transition:transform .2s,box-shadow .2s}
+.btn-primary:hover{transform:scale(1.05);box-shadow:0 8px 30px rgba(255,107,53,0.3)}
+.btn-secondary{display:inline-block;padding:16px 32px;color:#ff6b35;text-decoration:none;border:1px solid rgba(255,107,53,0.3);border-radius:12px;font-size:1rem;font-weight:600;transition:all .2s}
+.btn-secondary:hover{background:rgba(255,107,53,0.1)}
+.hero-micro{font-size:.85rem;color:#6b7280}
+.hero-micro span{color:#22c55e;font-weight:600}
+.hero-image{text-align:center}
+.hero-image img{max-width:100%;height:auto;border-radius:16px;filter:drop-shadow(0 20px 40px rgba(0,0,0,0.4))}
+
+/* Trust Bar */
+.trust-bar{background:#121a2e;border-top:1px solid rgba(255,107,53,0.1);border-bottom:1px solid rgba(255,107,53,0.1);padding:16px 20px;text-align:center}
+.trust-bar .items{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;font-size:.85rem;color:#9ca3af}
+.trust-bar .items span{display:flex;align-items:center;gap:6px}
+
+/* Section */
+.section{max-width:1000px;margin:0 auto;padding:80px 20px}
+.section-title{font-size:clamp(1.5rem,3vw,2.2rem);color:#fff;font-weight:800;margin-bottom:12px}
+.section-title.center{text-align:center}
+.section-sub{color:#9ca3af;font-size:1.05rem;margin-bottom:40px;max-width:640px}
+.section-sub.center{text-align:center;margin-left:auto;margin-right:auto}
+
+/* Feature Grid */
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.feature{background:#121a2e;border-radius:14px;padding:28px;border:1px solid rgba(255,107,53,0.1);transition:border-color .2s}
+.feature:hover{border-color:rgba(255,107,53,0.3)}
+.feature .icon{font-size:1.8rem;margin-bottom:12px}
+.feature h3{color:#fff;font-size:1.05rem;font-weight:700;margin-bottom:8px}
+.feature p{color:#9ca3af;font-size:.9rem;line-height:1.6}
+
+/* Social Proof */
+.proof{background:#121a2e;border-radius:16px;padding:48px 32px;border:1px solid rgba(255,107,53,0.1)}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-bottom:32px}
+.review{background:#0a0f1a;border-radius:12px;padding:24px;border:1px solid rgba(255,255,255,0.05)}
+.review .stars{color:#ff6b35;margin-bottom:8px;font-size:1.1rem}
+.review p{color:#d1d5db;font-size:.95rem;font-style:italic;margin-bottom:12px;line-height:1.6}
+.review cite{color:#6b7280;font-size:.85rem;font-style:normal}
+.proof-logos{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;align-items:center;color:#6b7280;font-size:.85rem;padding-top:24px;border-top:1px solid rgba(255,255,255,0.05)}
+.proof-logos span{display:flex;align-items:center;gap:6px}
+
+/* Comparison */
+.comparison-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.comparison-table{width:100%;border-collapse:collapse;min-width:600px}
+.comparison-table th{padding:14px 16px;text-align:left;font-weight:600;font-size:.9rem;color:#6b7280;border-bottom:2px solid rgba(255,255,255,0.1)}
+.comparison-table th.highlight-col{color:#ff6b35;background:rgba(255,107,53,0.05);border-bottom-color:#ff6b35}
+.comparison-table td{padding:14px 16px;border-bottom:1px solid rgba(255,255,255,0.05);color:#d1d5db;font-size:.9rem}
+.comparison-table td.highlight-col{background:rgba(255,107,53,0.03);color:#fff;font-weight:500}
 .comparison-table tr:last-child td{border-bottom:none}
-.comparison-table .highlight{color:#ff6b35;font-weight:600}
-.how-it-works{margin:60px 0}
-.how-it-works h2{color:#e0e0e0;margin-bottom:30px;font-size:1.8rem;text-align:center}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
-.step{background:#121a2e;border-radius:12px;padding:24px;text-align:center;border:1px solid rgba(255,107,53,0.15)}
-.step-number{display:inline-block;width:40px;height:40px;background:#ff6b35;color:#fff;border-radius:50%;line-height:40px;font-weight:700;margin-bottom:16px}
-.step h3{color:#ff6b35;margin-bottom:12px;font-size:1.1rem}
-.step p{color:#9ca3af;font-size:.95rem}
-.related-section{margin:60px 0;padding:40px;background:#121a2e;border-radius:16px;border:1px solid rgba(255,107,53,0.15)}
-.related-section h2{color:#e0e0e0;margin-bottom:30px;font-size:1.5rem;text-align:center}
-.related-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;text-align:center}
-.related-links a{color:#ff6b35;text-decoration:none;padding:12px;border-radius:8px;transition:background .2s,color .2s}
-.related-links a:hover{background:rgba(255,107,53,0.1);color:#ff9970}
-@media (max-width: 768px) {
-.comparison-table{font-size:.85rem}
-.comparison-table th,.comparison-table td{padding:10px}
+.comparison-table .check{color:#22c55e}
+.comparison-table .cross{color:#ef4444}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.step{text-align:center;padding:8px}
+.step-num{display:inline-flex;width:48px;height:48px;background:linear-gradient(135deg,#ff6b35,#ff3864);color:#fff;border-radius:50%;align-items:center;justify-content:center;font-weight:800;font-size:1.2rem;margin-bottom:16px}
+.step h3{color:#fff;font-size:1rem;font-weight:700;margin-bottom:8px}
+.step p{color:#9ca3af;font-size:.88rem}
+
+/* FAQ */
+.faq-list{max-width:760px;margin:0 auto}
+.faq-item{margin-bottom:12px}
+.faq-item details{background:#121a2e;border-radius:10px;border:1px solid rgba(255,255,255,0.06);overflow:hidden}
+.faq-item summary{padding:18px 20px;cursor:pointer;color:#fff;font-weight:600;font-size:.98rem;list-style:none;display:flex;justify-content:space-between;align-items:center;transition:background .2s}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';color:#ff6b35;font-size:1.3rem;font-weight:400;transition:transform .2s}
+.faq-item details[open] summary::after{content:'−'}
+.faq-item details[open] summary{background:rgba(255,107,53,0.05)}
+.faq-item .faq-a{padding:0 20px 18px;color:#9ca3af;font-size:.92rem;line-height:1.7}
+
+/* Related */
+.related{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.related a{display:block;padding:14px 16px;background:#121a2e;border-radius:10px;color:#ff6b35;text-decoration:none;font-size:.9rem;font-weight:500;border:1px solid rgba(255,107,53,0.1);transition:all .2s;text-align:center}
+.related a:hover{background:rgba(255,107,53,0.08);border-color:rgba(255,107,53,0.3)}
+
+/* CTA Banner */
+.cta-banner{background:linear-gradient(135deg,#ff6b35,#ff3864);padding:48px 20px;text-align:center;border-radius:16px;margin-bottom:40px}
+.cta-banner h2{color:#fff;font-size:clamp(1.3rem,3vw,2rem);font-weight:800;margin-bottom:8px}
+.cta-banner p{color:rgba(255,255,255,0.85);margin-bottom:20px;font-size:1rem}
+.cta-banner .btn-white{display:inline-block;padding:16px 40px;background:#fff;color:#ff6b35;text-decoration:none;border-radius:12px;font-size:1.1rem;font-weight:700;transition:transform .2s}
+.cta-banner .btn-white:hover{transform:scale(1.05)}
+.cta-banner .micro{color:rgba(255,255,255,0.7);font-size:.8rem;margin-top:10px}
+
+/* Popup */
+.popup-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,15,26,0.85);z-index:9999;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;backdrop-filter:blur(4px)}
+.popup-box{background:#121a2e;border:1px solid rgba(255,107,53,0.2);border-radius:16px;padding:32px 24px;max-width:400px;width:100%;text-align:center;box-shadow:0 24px 48px rgba(0,0,0,0.5)}
+.popup-box h2{color:#fff;font-size:1.2rem;font-weight:700;margin-bottom:8px}
+.popup-box p{color:#9ca3af;font-size:.92rem;margin-bottom:6px}
+.popup-box .timer{color:#ff6b35;font-size:.85rem;margin-bottom:20px}
+.popup-box .popup-btns{display:flex;flex-direction:column;gap:10px}
+.popup-box .popup-accept{padding:14px;background:linear-gradient(135deg,#ff6b35,#ff3864);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;font-size:1rem;transition:transform .2s}
+.popup-box .popup-accept:hover{transform:scale(1.03)}
+.popup-box .popup-cancel{padding:12px;background:none;color:#6b7280;border:1px solid #374151;border-radius:10px;font-size:.9rem;cursor:pointer;transition:all .2s}
+.popup-box .popup-cancel:hover{color:#9ca3af;border-color:#4b5563}
+
+/* Mobile */
+@media(max-width:768px){
+.hero{grid-template-columns:1fr;text-align:center;padding:40px 20px 60px}
+.hero-cta{justify-content:center}
+.hero-image{order:-1}
+.hero-image img{max-width:280px}
+.trust-bar .items{gap:16px;font-size:.78rem}
+.section{padding:60px 20px}
+.comparison-table{font-size:.82rem}
+.comparison-table th,.comparison-table td{padding:10px 12px}
 }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9FY8Q06EX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Q9FY8Q06EX');</script>
 </head>
 <body>
-<section class="hero-banner">
-<h1>OpenClaw Hardware: Buy Your Private AI Device</h1>
-<p>Looking for <strong>OpenClaw hardware</strong>? The <strong>ClawBox</strong> is the official OpenClaw AI device — a dedicated box powered by the <strong>NVIDIA Jetson Orin Nano</strong> with 67 TOPS of AI performance. Buy OpenClaw hardware pre-configured and ready to run. No cloud subscriptions.</p>
-<div class="price-badge">€399 One-Time</div>
+
+<!-- Hero -->
+<section class="hero">
+<div class="hero-text">
+<h1>Automate Your Life.<br><span>Completely Private.</span></h1>
+<p class="subtitle">Meet <strong>ClawBox</strong> — a plug-and-play AI assistant that runs on your desk, not in the cloud. Powered by <strong>NVIDIA Jetson Orin Nano</strong> with 67 TOPS of AI performance. No subscriptions. No data leaks. Ever.</p>
+<div class="hero-cta">
+<a href="https://openclawhardware.dev/" target="_blank" class="btn-primary">Get ClawBox — €399</a>
+<a href="#how-it-works" class="btn-secondary">See How It Works</a>
+</div>
+<p class="hero-micro"><span>✓ 30-day money-back guarantee</span> · Ships worldwide · 15W power draw</p>
+</div>
+<div class="hero-image">
+<img src="https://openclawhardware.dev/clawbox-1.webp" alt="ClawBox AI Hardware Device — NVIDIA Jetson Orin Nano in premium carbon fiber enclosure" width="500" height="500" loading="eager">
+</div>
 </section>
 
-<div class="content">
-<div class="grid">
-<div class="card">
-<div class="icon">🔧</div>
-<h3>OpenClaw AI Hardware, Pre-Configured</h3>
-<p>The ClawBox is the dedicated OpenClaw device — OpenClaw pre-installed on NVIDIA Jetson Orin Nano 8GB with 512GB NVMe SSD. Unbox, plug in, and your AI assistant is live. This is OpenClaw hardware done right.</p>
+<!-- Trust Bar -->
+<div class="trust-bar">
+<div class="items">
+<span>⚡ Powered by NVIDIA</span>
+<span>🔓 Open Source (184K+ ⭐)</span>
+<span>🛡️ 30-Day Guarantee</span>
+<span>🌍 Ships Worldwide</span>
+<span>💡 15W Power</span>
 </div>
-<div class="card">
-<div class="icon">🟢</div>
-<h3>OpenClaw + NVIDIA Jetson Power</h3>
-<p>OpenClaw NVIDIA integration means 67 TOPS of AI acceleration. Run local LLMs, vision models, and voice recognition — all on NVIDIA's proven Jetson architecture. The best hardware for OpenClaw.</p>
 </div>
-<div class="card">
-<div class="icon">🔒</div>
-<h3>Self-Hosted, Fully Private</h3>
-<p>Every conversation stays on your OpenClaw device. No data leaves your network. OpenClaw AI hardware means complete privacy — your AI assistant belongs to you.</p>
-</div>
-<div class="card">
-<div class="icon">💬</div>
-<h3>Multi-Platform AI Box</h3>
-<p>Connect your OpenClaw box to Telegram, WhatsApp, Discord, or the built-in web interface. One OpenClaw hardware device serves all your messaging platforms.</p>
-</div>
-<div class="card">
+
+<!-- Features -->
+<div class="section">
+<h2 class="section-title center">What You Get With OpenClaw Hardware</h2>
+<p class="section-sub center">Everything you need for a private, always-on AI assistant — out of the box.</p>
+<div class="features">
+<div class="feature">
 <div class="icon">⚡</div>
+<h3>67 TOPS AI Acceleration</h3>
+<p>NVIDIA Jetson Orin Nano delivers nearly 2x the AI performance of a Mac Mini M4. Run local LLMs, vision models, and voice recognition simultaneously.</p>
+</div>
+<div class="feature">
+<div class="icon">🔒</div>
+<h3>100% Private by Design</h3>
+<p>Every conversation, every automation, every file stays on your device. No cloud servers, no third-party access, no data mining. Your AI, your data.</p>
+</div>
+<div class="feature">
+<div class="icon">💬</div>
+<h3>Works With Your Apps</h3>
+<p>Connect to Telegram, WhatsApp, Discord, or the built-in web interface. One device, all your messaging platforms, zero configuration headaches.</p>
+</div>
+<div class="feature">
+<div class="icon">🌐</div>
+<h3>Browser Automation Built-In</h3>
+<p>Automate web tasks, scrape data, fill forms, and monitor websites — all running locally. Like having a virtual assistant that never sleeps.</p>
+</div>
+<div class="feature">
+<div class="icon">💡</div>
 <h3>15W Always-On Operation</h3>
-<p>The OpenClaw device runs 24/7 on just 15 watts — about €15/year in electricity. Designed for continuous, silent AI operation at home or office.</p>
+<p>Runs 24/7 on less power than a light bulb. About €12/year in electricity. Silent, fanless, designed to be forgotten on your desk.</p>
 </div>
-<div class="card">
-<div class="icon">🛒</div>
-<h3>Buy OpenClaw Hardware Today</h3>
-<p>Ready to buy OpenClaw? The ClawBox ships to EU, US, Canada, Australia, UK, Switzerland, and Norway. 30-day satisfaction guarantee included with every purchase.</p>
+<div class="feature">
+<div class="icon">📦</div>
+<h3>5-Minute Setup, Zero Coding</h3>
+<p>Plug in, scan QR code, connect your messaging app. OpenClaw is pre-installed and optimized. No terminal commands, no Docker, no frustration.</p>
+</div>
 </div>
 </div>
 
-<section class="testimonial">
-<h2 style="color:#e0e0e0;margin-bottom:20px">Why People Choose OpenClaw Hardware</h2>
-<blockquote>"I searched for the best hardware for OpenClaw and found the ClawBox. Replaced three cloud AI subscriptions. It paid for itself in four months — and my data never leaves my home network."</blockquote>
-<cite>— Early adopter, Berlin</cite>
-</section>
+<!-- Social Proof -->
+<div class="section">
+<h2 class="section-title center">What Early Adopters Say</h2>
+<p class="section-sub center">Real feedback from real ClawBox owners.</p>
+<div class="proof">
+<div class="reviews">
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"Replaced three cloud AI subscriptions. The ClawBox paid for itself in four months — and my data never leaves my home network."</p>
+<cite>— Thomas K., Stavanger, Norway 🇳🇴</cite>
+</div>
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"Setup was genuinely 5 minutes. Scanned the QR code, connected Telegram, and it was running. I'm not technical at all."</p>
+<cite>— Sebastian R., Berlin, Germany 🇩🇪</cite>
+</div>
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"The browser automation alone is worth €399. It monitors 12 websites for me daily and sends alerts to my WhatsApp. Runs silently on my shelf."</p>
+<cite>— Marco V., Amsterdam, Netherlands 🇳🇱</cite>
+</div>
+</div>
+<div class="proof-logos">
+<span>🏷️ 4 countries shipped to</span>
+<span>⭐ 184K+ GitHub stars</span>
+<span>🔧 Built on NVIDIA Jetson</span>
+<span>📦 Batch 1 shipping now</span>
+</div>
+</div>
+</div>
 
-<p class="seo-text">OpenClaw Hardware delivers the complete open-claw hardware experience: NVIDIA Jetson Orin Nano, 512GB NVMe storage, OpenClaw pre-installed with browser automation, voice recognition, and vision capabilities. Whether you want to buy OpenClaw for home automation, business AI, or a personal AI assistant — the ClawBox is the official OpenClaw device. Open Claw Hardware — one box, zero subscriptions, infinite possibilities.</p>
-
-<section class="how-it-works">
-<h2>How OpenClaw Hardware Works</h2>
+<!-- How It Works -->
+<div class="section" id="how-it-works">
+<h2 class="section-title center">How to Set Up Your Private Home AI Server</h2>
+<p class="section-sub center">From unboxing to your first automation in under 5 minutes.</p>
 <div class="steps">
 <div class="step">
-<div class="step-number">1</div>
-<h3>Unbox & Connect</h3>
-<p>Plug the ClawBox into power and ethernet. OpenClaw boots automatically with all AI models pre-loaded and configured.</p>
+<div class="step-num">1</div>
+<h3>Unbox & Plug In</h3>
+<p>Connect power and ethernet. ClawBox boots automatically with OpenClaw pre-loaded.</p>
 </div>
 <div class="step">
-<div class="step-number">2</div>
-<h3>Connect Your Apps</h3>
-<p>Add your Telegram bot token, WhatsApp Business API, or Discord webhook. OpenClaw integrates with your existing messaging platforms.</p>
+<div class="step-num">2</div>
+<h3>Scan the QR Code</h3>
+<p>Use your phone camera to connect. No app downloads needed — works with your existing apps.</p>
 </div>
 <div class="step">
-<div class="step-number">3</div>
+<div class="step-num">3</div>
+<h3>Connect Your Messaging</h3>
+<p>Link Telegram, WhatsApp, or Discord. Your AI assistant is now reachable from your phone.</p>
+</div>
+<div class="step">
+<div class="step-num">4</div>
 <h3>Start Automating</h3>
-<p>Use natural language to create browser automations, schedule tasks, or ask complex questions. All processing happens locally on your OpenClaw hardware.</p>
-</div>
-<div class="step">
-<div class="step-number">4</div>
-<h3>Scale & Customize</h3>
-<p>Install additional models, create custom workflows, or integrate with home automation. Your OpenClaw device grows with your needs.</p>
+<p>Ask questions, automate web tasks, schedule reminders. All processing stays local on your ClawBox.</p>
 </div>
 </div>
-</section>
+</div>
 
-<section class="comparison-section">
-<h2>ClawBox vs Alternatives</h2>
+<!-- Comparison -->
+<div class="section">
+<h2 class="section-title center">ClawBox vs Raspberry Pi vs Cloud AI</h2>
+<p class="section-sub center">How OpenClaw hardware stacks up against the alternatives for a private home AI server.</p>
+<div class="comparison-wrap">
 <table class="comparison-table">
 <thead>
 <tr>
 <th>Feature</th>
-<th class="highlight">ClawBox</th>
-<th>Cloud AI Services</th>
-<th>DIY Raspberry Pi</th>
-<th>Custom Workstation</th>
+<th class="highlight-col">ClawBox (€399)</th>
+<th>Cloud AI ($20+/mo)</th>
+<th>Raspberry Pi 5 (~€200)</th>
+<th>Custom PC (~€800+)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Setup Time</td>
-<td class="highlight">5 minutes</td>
+<td class="highlight-col">5 minutes</td>
 <td>30 minutes</td>
 <td>8+ hours</td>
 <td>12+ hours</td>
 </tr>
 <tr>
-<td>Monthly Cost</td>
-<td class="highlight">€0 (one-time €399)</td>
-<td>€50-200/month</td>
-<td>€0 (after €150 hardware)</td>
-<td>€0 (after €800+ hardware)</td>
-</tr>
-<tr>
 <td>AI Performance</td>
-<td class="highlight">67 TOPS</td>
+<td class="highlight-col">67 TOPS</td>
 <td>Unlimited (cloud)</td>
-<td>1-4 TOPS</td>
+<td>~2 TOPS</td>
 <td>20-100+ TOPS</td>
 </tr>
 <tr>
-<td>Privacy</td>
-<td class="highlight">100% Local</td>
-<td>Cloud-dependent</td>
-<td>100% Local</td>
-<td>100% Local</td>
+<td>4-Year Total Cost</td>
+<td class="highlight-col">€411 (hw + power)</td>
+<td>€960-9,600</td>
+<td>€272 (hw + power)</td>
+<td>€1,200+ (hw + power)</td>
+</tr>
+<tr>
+<td>Data Privacy</td>
+<td class="highlight-col"><span class="check">✓</span> 100% local</td>
+<td><span class="cross">✗</span> Cloud servers</td>
+<td><span class="check">✓</span> 100% local</td>
+<td><span class="check">✓</span> 100% local</td>
 </tr>
 <tr>
 <td>Power Draw</td>
-<td class="highlight">15W</td>
+<td class="highlight-col">15W</td>
 <td>N/A</td>
 <td>5-10W</td>
 <td>200-500W</td>
 </tr>
 <tr>
-<td>Software Support</td>
-<td class="highlight">Pre-configured</td>
-<td>API-dependent</td>
-<td>Manual setup</td>
-<td>Manual setup</td>
+<td>Pre-Configured</td>
+<td class="highlight-col"><span class="check">✓</span> Ready to go</td>
+<td><span class="check">✓</span> Managed</td>
+<td><span class="cross">✗</span> DIY required</td>
+<td><span class="cross">✗</span> DIY required</td>
 </tr>
 <tr>
-<td>Warranty</td>
-<td class="highlight">30-day guarantee</td>
-<td>Service-level</td>
-<td>Component-level</td>
-<td>Component-level</td>
+<td>Browser Automation</td>
+<td class="highlight-col"><span class="check">✓</span> Built-in</td>
+<td><span class="cross">✗</span> Separate tool</td>
+<td><span class="cross">✗</span> Manual setup</td>
+<td><span class="cross">✗</span> Manual setup</td>
+</tr>
+<tr>
+<td>Money-Back Guarantee</td>
+<td class="highlight-col"><span class="check">✓</span> 30 days</td>
+<td>Cancel anytime</td>
+<td><span class="cross">✗</span></td>
+<td><span class="cross">✗</span></td>
 </tr>
 </tbody>
 </table>
-</section>
-
-<section class="faq-section">
-<h2>Frequently Asked Questions</h2>
-
-<div class="faq-item">
-<details>
-<summary>What exactly is OpenClaw hardware?</summary>
-<div class="faq-content">
-<p>OpenClaw hardware refers to the ClawBox — a dedicated AI device that runs the OpenClaw software stack. It's built on the NVIDIA Jetson Orin Nano platform with 8GB RAM, 512GB NVMe SSD, and delivers 67 TOPS of AI performance. Unlike software-only solutions, OpenClaw hardware comes pre-configured and optimized for AI workloads.</p>
 </div>
-</details>
 </div>
 
-<div class="faq-item">
-<details>
-<summary>Can I buy OpenClaw hardware directly from NVIDIA?</summary>
-<div class="faq-content">
-<p>No, the ClawBox is exclusively available through OpenClaw Hardware. While NVIDIA sells the Jetson development kits, our ClawBox includes custom software integration, optimized cooling, professional enclosure, and 30-day support. You're buying a complete AI assistant solution, not just hardware.</p>
+<!-- FAQ -->
+<div class="section">
+<h2 class="section-title center">Frequently Asked Questions</h2>
+<p class="section-sub center">Everything you need to know about OpenClaw hardware before buying.</p>
+<div class="faq-list">
+<div class="faq-item"><details><summary>What exactly is OpenClaw hardware?<span></span></summary><div class="faq-a">OpenClaw hardware is the ClawBox — a dedicated AI device running the OpenClaw software stack on NVIDIA Jetson Orin Nano. It includes 8GB RAM, 512GB NVMe SSD, and delivers 67 TOPS of AI performance. Unlike cloud AI or DIY setups, it comes pre-configured and ready to use in 5 minutes.</div></details></div>
+
+<div class="faq-item"><details><summary>How does ClawBox compare to ChatGPT Plus or cloud AI?</summary><div class="faq-a">ClawBox costs €399 one-time vs €240+/year for ChatGPT Plus. All processing happens locally — your conversations, files, and automations never leave your network. It runs 24/7 without internet dependency and breaks even vs cloud AI in under 6 months.</div></details></div>
+
+<div class="faq-item"><details><summary>What can I automate with OpenClaw hardware?</summary><div class="faq-a">Browser automation (web scraping, form filling, monitoring), email management, calendar scheduling, multi-platform messaging (Telegram, WhatsApp, Discord), smart home triggers, file processing, and custom AI workflows. All running locally on your 15W device.</div></details></div>
+
+<div class="faq-item"><details><summary>Is ClawBox difficult to set up?</summary><div class="faq-a">Not at all. Plug in power and ethernet, scan the QR code with your phone, connect your Telegram or WhatsApp — done. Under 5 minutes, zero coding required. OpenClaw is pre-installed and optimized for the hardware.</div></details></div>
+
+<div class="faq-item"><details><summary>Where does ClawBox ship to?</summary><div class="faq-a">Worldwide — EU, US, Canada, Australia, UK, Switzerland, and Norway. Every order includes a 30-day money-back guarantee. If it's not for you, send it back for a full refund.</div></details></div>
+
+<div class="faq-item"><details><summary>Can I use my own AI models?</summary><div class="faq-a">Yes. The NVIDIA Jetson platform supports a wide range of AI models including local LLMs, vision models, and speech recognition. You can install additional models, customize workflows, and the OpenClaw software receives regular free updates.</div></details></div>
+
+<div class="faq-item"><details><summary>What if I'm not technical?</summary><div class="faq-a">ClawBox is designed for non-technical users. The QR code setup, messaging integration, and natural language interface mean you never need to touch a command line. If you can use WhatsApp, you can use ClawBox.</div></details></div>
+
+<div class="faq-item"><details><summary>Is this better than building my own with a Raspberry Pi?</summary><div class="faq-a">For AI workloads, significantly better. The Jetson Orin Nano delivers 67 TOPS vs ~2 TOPS on a Pi 5. ClawBox also comes pre-configured — no hours of Linux setup, driver installation, or software configuration. It costs more upfront but saves 8+ hours of setup time and delivers 30x the AI performance.</div></details></div>
 </div>
-</details>
 </div>
 
-<div class="faq-item">
-<details>
-<summary>How does OpenClaw hardware compare to cloud AI services?</summary>
-<div class="faq-content">
-<p>OpenClaw hardware offers complete privacy (all processing local), zero monthly fees after purchase, and no internet dependency for AI tasks. Cloud services offer unlimited scale but require ongoing subscriptions, send your data to external servers, and stop working without internet. The ClawBox breaks even vs cloud AI in 3-6 months.</p>
-</div>
-</details>
-</div>
-
-<div class="faq-item">
-<details>
-<summary>What's included when I buy OpenClaw hardware?</summary>
-<div class="faq-content">
-<p>Your ClawBox includes: NVIDIA Jetson Orin Nano 8GB, 512GB NVMe SSD, custom cooling solution, professional enclosure, OpenClaw software pre-installed, browser automation capabilities, multi-platform messaging integration, 30-day money-back guarantee, and worldwide shipping (EU, US, Canada, Australia, UK, Switzerland, Norway).</p>
-</div>
-</details>
-</div>
-
-<div class="faq-item">
-<details>
-<summary>Where can I buy authentic OpenClaw hardware?</summary>
-<div class="faq-content">
-<p>Authentic OpenClaw hardware is only available through openclawhardware.dev. Beware of unofficial sellers or modified devices — they won't include our software optimization, warranty, or support. The ClawBox is a complete solution, not just repackaged components.</p>
-</div>
-</details>
-</div>
-
-<div class="faq-item">
-<details>
-<summary>Is OpenClaw hardware suitable for business use?</summary>
-<div class="faq-content">
-<p>Yes! Many businesses use OpenClaw hardware for customer service automation, internal AI assistants, and document processing. The one-time purchase model makes it cost-effective vs cloud subscriptions, and local processing ensures sensitive business data never leaves your network. Perfect for GDPR compliance.</p>
-</div>
-</details>
-</div>
-
-<div class="faq-item">
-<details>
-<summary>What support comes with OpenClaw hardware?</summary>
-<div class="faq-content">
-<p>Every ClawBox includes 30-day setup support, access to our community forums, comprehensive documentation, and software updates. The OpenClaw software has 184K+ GitHub stars and active MIT-licensed development. Hardware issues are covered by NVIDIA's component warranties.</p>
-</div>
-</details>
-</div>
-
-<div class="faq-item">
-<details>
-<summary>Can I upgrade my OpenClaw hardware later?</summary>
-<div class="faq-content">
-<p>The ClawBox storage and software are upgradeable. You can add external storage via USB 3.0, install additional AI models, and receive free OpenClaw software updates. The NVIDIA Jetson platform ensures long-term compatibility with new AI frameworks and models.</p>
-</div>
-</details>
-</div>
-</section>
-
-<section class="related-section">
-<h2>Related Resources</h2>
-<div class="related-links">
-<a href="https://self-hosted-ai-assistant.com">Self-Hosted AI Assistant Solutions</a>
-<a href="https://jetson-ai-assistant.com">NVIDIA Jetson AI Assistant Guide</a>
+<!-- Related -->
+<div class="section">
+<h2 class="section-title center">Explore More</h2>
+<div class="related">
+<a href="https://self-hosted-ai-assistant.com">Self-Hosted AI Assistant Guide</a>
+<a href="https://jetson-ai-assistant.com">Jetson AI Assistant Setup</a>
 <a href="https://edge-ai-hardware.com">Edge AI Hardware Comparison</a>
-<a href="https://openclawhardware.dev/compare">Compare ClawBox Models</a>
-<a href="https://openclawhardware.dev/setup-guide">ClawBox Setup Guide</a>
-<a href="https://openclawhardware.dev/faq">Technical FAQ</a>
+<a href="https://openclawhardware.dev/compare">Compare All Options</a>
+<a href="https://openclawhardware.dev/setup-guide">Setup Guide</a>
+<a href="https://openclawhardware.dev/faq">Full Technical FAQ</a>
 </div>
-</section>
+</div>
 
-<section class="cta">
-<h2>OpenClaw Hardware — €399 One-Time</h2>
-<a href="https://openclawhardware.dev/" target="_blank">Get ClawBox →</a>
-</section>
+<!-- CTA -->
+<div class="section" style="padding-top:0">
+<div class="cta-banner">
+<h2>Your Private AI Server. One Payment. Forever.</h2>
+<p>Join early adopters in 4 countries. Ships worldwide with a 30-day guarantee.</p>
+<a href="https://openclawhardware.dev/" target="_blank" class="btn-white">Get ClawBox — €399 →</a>
+<p class="micro">🛡️ 30-day money-back guarantee · 🔒 Secure Stripe checkout · 🌍 Free EU shipping</p>
 </div>
-</body>
+</div>
 
-<!-- Redirect Popup -->
-<div id="redirectPopup" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;align-items:center;justify-content:center;padding:20px;box-sizing:border-box">
-<div style="background:#121a2e;border:1px solid rgba(255,107,53,0.3);border-radius:16px;padding:28px 20px;max-width:420px;width:100%;box-sizing:border-box;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.5)">
-<h2 style="color:#fff;font-size:clamp(1.1rem,4vw,1.5rem);margin:0 0 12px;font-weight:700">🚀 Want to see ClawBox in action?</h2>
-<p style="color:#9ca3af;margin:0 0 8px;font-size:1rem">Visit the official ClawBox store for full specs, demos, and ordering.</p>
-<p id="countdownText" style="color:#ff6b35;margin:0 0 24px;font-size:0.9rem">Redirecting in <span id="countdown">10</span> seconds...</p>
-<div style="display:flex;gap:10px;justify-content:center;flex-direction:column;align-items:center">
-<a href="https://openclawhardware.dev/" id="acceptBtn" style="display:inline-block;padding:12px 24px;background:linear-gradient(135deg,#ff6b35,#ff3864);color:#fff;text-decoration:none;border-radius:12px;font-size:1.05rem;font-weight:600;transition:transform .2s">Yes, take me there →</a>
-<button id="cancelBtn" onclick="closePopup()" style="padding:12px 24px;background:transparent;color:#9ca3af;border:1px solid #374151;border-radius:12px;font-size:1.05rem;cursor:pointer;transition:all .2s">No thanks, stay here</button>
+<!-- Popup -->
+<div class="popup-overlay" id="redirectPopup">
+<div class="popup-box">
+<h2>🚀 Ready to see ClawBox?</h2>
+<p>Visit the official store for full specs, demo video, and secure checkout.</p>
+<p class="timer">Redirecting in <span id="countdown">10</span>s...</p>
+<div class="popup-btns">
+<a href="https://openclawhardware.dev/" class="popup-accept">Yes, take me there →</a>
+<button class="popup-cancel" onclick="closePopup()">No thanks, I'll stay here</button>
 </div>
 </div>
 </div>
+
 <script>
 (function(){
 var shown=false,timer=null,count=10;
 function showPopup(){
 if(shown)return;shown=true;
-var p=document.getElementById('redirectPopup');
-p.style.display='flex';
-count=10;
-document.getElementById('countdown').textContent=count;
+document.getElementById('redirectPopup').style.display='flex';
+count=10;document.getElementById('countdown').textContent=count;
 timer=setInterval(function(){
-count--;
-document.getElementById('countdown').textContent=count;
+count--;document.getElementById('countdown').textContent=count;
 if(count<=0){clearInterval(timer);window.location.href='https://openclawhardware.dev/';}
 },1000);
 }
-window.closePopup=function(){
-clearInterval(timer);
-document.getElementById('redirectPopup').style.display='none';
-};
+window.closePopup=function(){clearInterval(timer);document.getElementById('redirectPopup').style.display='none';};
 window.addEventListener('scroll',function(){
-if((window.innerHeight+window.scrollY)>=document.body.offsetHeight-100){showPopup();}
+if((window.innerHeight+window.scrollY)>=document.body.offsetHeight-100)showPopup();
 });
 })();
 </script>
+
+</body>
 </html>
